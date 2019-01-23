@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Get started</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+    background:#B11437;
+	color: black;
+}
+</style>
+</head>
+<body>
+	
+	<form action="http://localhost/action_page.php" style="border:1px solid #ccc">
+    <h1>Get started</h1>
+    <p>Please fill in this form to submit your review.</p>
+    <hr>
+	<table>
+		<tr>
+			<td>Username: </td>
+			<td><input type="text" name="username" required></td>
+		</tr>
+		<tr>
+			<td>Website name:</td>
+			<td><input type="text" name="webname" required></td>
+		</tr>
+		<tr>
+			<td>URL:</td>
+			<td><input type="text" name="url" required></td>   
+		</tr>
+		<tr>
+			<td>Category:</td>
+			<td> 
+				<select name="category">
+					<option value="ecommerce">E-commerce</option>
+					<option value="bnp">Blogs and Personal</option>
+					<option value="ent">Entertainment</option>
+					<option value="online">Online Community</option>
+					<option value="cnb">Catalogue and Brochure</option>
+					<option value="busi">Business Directory</option>
+					<option value="elearn">E-learning</option>
+					<option value="other">Others</option>
+				</select>
+			<td>
+		</tr>
+					
+		<tr>
+			<td>Please answer the following questions:</td>
+		<tr>
+		<tr><td></td>
+			<td>Accuracy:</td>
+			<td><input type="radio" name="accuracy" value="5">Excellent
+			<input type="radio" name="accuracy" value="4">Good
+			<input type="radio" name="accuracy" value="3">Average
+			<input type="radio" name="accuracy" value="2">Not bad
+			<input type="radio" name="accuracy" value="1">Bad</td>
+		</tr>
+		<tr><td></td>
+			<td>Reliable:</td>
+			<td><input type="radio" name="reliable" value="5">Excellent
+			<input type="radio" name="reliable" value="4">Good
+			<input type="radio" name="reliable" value="3">Average
+			<input type="radio" name="reliable" value="2">Not bad
+			<input type="radio" name="reliable" value="1">Bad</td>
+		</tr>
+		<tr><td></td>
+			<td>Comprehensible:</td>
+			<td><input type="radio" name="comp" value="5">Excellent
+			<input type="radio" name="comp" value="4">Good
+			<input type="radio" name="comp" value="3">Average
+			<input type="radio" name="comp" value="2">Not bad
+			<input type="radio" name="comp" value="1">Bad</td>
+		</tr>
+		<tr><td></td>
+			<td>Interactive:</td>
+			<td><input type="radio" name="inter" value="5">Excellent
+			<input type="radio" name="inter" value="4">Good
+			<input type="radio" name="inter" value="3">Average
+			<input type="radio" name="inter" value="2">Not bad
+			<input type="radio" name="inter" value="1">Bad</td>
+		</tr>
+		<tr><td></td>
+			<td>Was it useful:</td>
+			<td><input type="radio" name="was" value="5">Excellent
+			<input type="radio" name="was" value="4">Good
+			<input type="radio" name="was" value="3">Average
+			<input type="radio" name="was" value="2">Not bad
+			<input type="radio" name="was" value="1">Bad</td>
+		</tr>
+		<tr>
+			<td>Enter your views on the website:</td>
+			<td><textarea name="views" rows="5" cols="50"></textarea></td>
+		</tr>
+		<tr>
+			<td><button type="reset">Cancel</button></td>
+			<td><button type="submit">Submit</button></td>
+		</tr>
+	</table>
+
+	
+
+</form>
+</body>
+</html>
