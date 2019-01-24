@@ -1,0 +1,74 @@
+<html>
+<head>
+<style>
+.bg-img {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/9b3ff229975481.560d542fac887.gif");
+  min-height: 625px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+{
+  box-sizing: border-box;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color : black;
+}
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+  color : white;
+}
+/* Set a style for the submit button */
+.button {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body bgcolor = "#084871">
+<div class="bg-img">
+  <form action="http://localhost/signin.php" class="container" method="post">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter username" name="uname" required>
+	<label for="pwd"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pwd" required>
+
+    <button type="submit" class="button">Login
+	<a href="http://google.com" class="button" value = "submit"></a>
+	</button>
+  </form>
+</div>
+
+<p></p>
+
+</body>
+</html>

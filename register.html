@@ -1,0 +1,97 @@
+<html>
+<head>
+<style>
+{
+  box-sizing: border-box;
+}
+.bg-img {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/9b3ff229975481.560d542fac887.gif");
+  min-height: 925px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+input[type=text], input[type=password],input[type=date]:focus ,input[type=radio]:focus{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+  color : white;
+}
+ input[type=text]:focus,input[type=password],input[type=date]:focus ,input[type=radio]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.button {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.container {
+  position: absolute;
+  center: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color : black;
+}
+.button:hover {
+  opacity: 1;
+}
+
+
+
+<div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+    <p>Hello World!</p>
+  </div>
+</div>
+</style>
+</head>
+<body bgcolor = "#084871">
+<div class="bg-img">
+  <form action="http://localhost/sign-up.php" class="container" method="post">
+    <h1> Sign up </h1>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter name" name="name" required>
+	<label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+	<label for="email"><b>Email-ID</b></label>
+    <input type="text" placeholder="Enter Email-ID" name="email" required>
+	<label for="pwd"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pwd" required>
+
+	<br><br>
+	<label for="gender"><b>Gender</b></label><br>
+    <input type="radio" name="gender" value="male"> Male<br>
+	<input type="radio" name="gender" value="female" checked> Female<br>
+	<input type="radio" name="gender" value="other"> Others<br><br>
+	<label for="country"><b>Country</b></label><br><br>
+	<select name="country">
+						<option value = "India">India</option>
+						<option value = "Argentina">Argentina</option>
+						<option value = "Burma">Burma</option>
+						<option value = "UK">UK</option>
+						<option value = "USA">USA</option>
+						<option value = "Others">Others</option>
+	</select><br><br>
+	<p>By creating an account you agree to our <a href="#" style="color:yellow">Terms & Privacy</a>.</p><br>
+	<button type="submit" class="button" onclick="check()">Sign Up</button><br><br>
+	<button type="reset" class="button" >Cancel</button>
+  </form>
+</div>
+</body>
+</html>
