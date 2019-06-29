@@ -7,6 +7,7 @@ The user will read the information displayed on the web and will rate the inform
 The prototype for this hackathon is as follows: There will be two types of users who will be utilizing the facilities provided by our website.
 1. The user who gives the URL and rating as the input along with the appropriate reason.
 2. The user who decides whether the particular website is trustable based on the reviews given by other users, further allowing this user to give his/her reviews.
+
 After giving reviews and rating about a particular website, the user can rate other websites based on the suggestions based on user’s interest. Based on these reviews an aggregated rating will be generated which will determine whether a particular website is trustable or not.
 This solution will help to built trust between the web users and reduce the false content to be displayed on the web.
 ## Technology stack:
